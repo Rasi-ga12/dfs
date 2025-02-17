@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 30px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:99;
+    padding-right: 1px;
+    background-color:rgba(5, 104, 5, 0.868);
+    height: 12%;
+}
+.cls button{
+    color:white;
+    background:black;
+    padding:10px;
+   
+    margin-left: 100px;
+    margin-top: 300px;
+    
+    font-size: 25px;
+   /* margin-top:10px;*/
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    height:100%;
+    background:url('https://cdn.wallpapersafari.com/26/4/MWqQB8.jpg') no-repeat;
+    padding: 16% 0;
+    background-size: cover;
+    background-position: center;
+}
+.Thaaimady{
+    font-size: 2em;
+    color:white;
+    user-select:none;
+}
+.Thaaimady:hover{
+    color: black;
+}
+.navigation a{
+    position:relative;
+    font-size: 1.4em;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    margin-left:40px;
+    margin-right: 40px;
+}
+.navigation a:hover{
+    color: black;
+}
+
+.navigation a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom: -6px;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transform-origin: right;
+    transform:scaleX(0);
+    transition: transform .5s;
+
+}
+.navigation a:hover::after{
+    transform:scaleX(1);
+    transform-origin: left;
+    
+}
+
+.btnlogin-popup{
+    background-color: aliceblue;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left:30px;
+    border-radius: 20%;
+    font-size: 1.3em;
+    transition:.5s;
+}
+.btnsignup-popup{
+    background-color: aliceblue;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left:30px;
+    border-radius: 20%;
+    font-size: 1.3em;
+    transition:.5s;
+
+}
+.btnsignup-popup:hover{
+    background-color:white;
+    color:black;
+}
+.btnlogin-popup:hover{
+    background-color:white;
+    color: black;
+}
+
+.wrapper{
+    position:relative;
+    width:400px;
+    height:440px;
+    background: transparent;
+    border:2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow:0 0 30px rgba(0, 0, 0, .5);
+    display:flex;
+    justify-content:center;
+    align-items: center;  
+
+   
+}
+.form-box h2{
+    font-size: 2em;
+    color:whitesmoke;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+ 
+}
+.input-box1{
+    position: relative;
+    height: 40px;
+    border-bottom: 2px solid white;
+    color: white;
+    margin-bottom: 20px;
+}
+.input-box2{
+    position: relative;
+    height: 40px;
+    border-bottom: 2px solid white;
+    color: white;
+    margin-bottom: 20px;
+}
+.login1{
+    padding:8px;
+}
+
+.login2{
+    padding:5px;
+    margin-top: 4px;
+}
+button{
+    color:white;
+    background-color: black;
+}
+
+.btn{
+    padding:2%;
+    border-radius: 2px;
+    border-style:double;
+    font-size: 1em;
+    margin-bottom: 16px;
+}
+.remember-forgot{
+    color: white;
+    height: 40px;
+}
+.signup{
+    color: white;
+    height: 40px;
+
+}
+.name{
+    font-size: larger;
+    color: rgb(71, 30, 193);
+}
+
+.head1 {
+    color: rgb(16, 113, 16);
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.head2 p{
+    color: black;
+    text-align: justify;
+    height: 30px;
+    padding-bottom: 40px;
+    font-size: 21px;
+ 
+
+}
+.head3{
+   
+    color: black;
+    text-align: left;
+    padding-bottom: 40px;
+}
+.head3 h1{
+  
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+.head3 h1:hover{
+    color:darkcyan;
+
+}
+.mission h1{
+    font-size: 35px;
+}
+   
+.mission h1{
+    text-align:center;
+    color: green;
+    padding-bottom: 50px;
+    margin-right: 50%;
+}
+.mission p{
+    text-align: center;
+    font-size: 20px;
+ 
+}
+.mission h2{
+    text-align: center;
+}
+.welcome{
+    margin-bottom: 100px;
+   
+}
+.welcome h1{
+
+font-size: 30px;
+}
+.mission1{
+    position: absolute;
+    height: 50px;
+    width: 50%;
+    text-align:center;
+
+}
+.img_one{
+    float:right;
+    width: 47%;
+}
+.home{
+    text-align: center;
+}
+.head3 hr{
+    color: black;
+}
+
+
+/*adminlogin*/
+.adminlog{
+    background:url('https://cdn.wallpapersafari.com/26/4/MWqQB8.jpg') no-repeat;
+    background-size: cover;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width:400px;
+    border:1px solid black;
+    align-items: center;
+}
+
+
+
+
+

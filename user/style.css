@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 30px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:99;
+    padding-right: 1px;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:url('https://cdn.wallpapersafari.com/26/4/MWqQB8.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.Thaaimady{
+    font-size: 2em;
+    color:white;
+    user-select:none;
+}
+.navigation a{
+    position:relative;
+    font-size: 1.4em;
+    color:black;
+    text-decoration:none;
+    font-weight:500;
+    margin-left:40px;
+}
+.navigation a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom: -6px;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transform-origin: right;
+    transform:scaleX(0);
+    transition: transform .5s;
+
+}
+.navigation a:hover::after{
+    transform:scaleX(1);
+    transform-origin: left;
+    
+}
+
+
+
+.btnlogin-popup{
+    background-color: aliceblue;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left:30px;
+    border-radius: 20%;
+    font-size: 1.3em;
+    transition:.5s;
+}
+.btnsignup-popup{
+    background-color: aliceblue;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left:30px;
+    border-radius: 20%;
+    font-size: 1.3em;
+    transition:.5s;
+
+}
+.btnsignup-popup:hover{
+    background-color: black;
+    color:white;
+}
+.btnlogin-popup:hover{
+    background-color: black;
+    color:white;
+}
+
+.wrapper{
+    position:relative;
+    width:400px;
+    height:440px;
+    background: transparent;
+    border:2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow:0 0 30px rgba(0, 0, 0, .5);
+    display:flex;
+    justify-content:center;
+    align-items: center;    
+}
+.wrapper .form-box login{
+    width: 100px;
+    padding: 40px;
+
+}
+.form-box h2{
+    font-size: 2em;
+    color:whitesmoke;
+    text-align: center;
+}
+.input-box1{
+    position: relative;
+    height: 40px;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.input-box2{
+    position: relative;
+    height: 40px;
+    border-bottom: 2px solid white;
+    color: white;
+   
+}
+.btn{
+    padding:2%;
+    border-radius: 2px;
+    border-style:double;
+    font-size: 1em;
+    margin-bottom: 16px;
+}
+.remember-forgot{
+    color: white;
+    height: 40px;
+}
+.signup{
+    color: white;
+    height: 40px;
+
+}

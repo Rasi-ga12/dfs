@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .container { width: 300px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; }
+        button { width: 100%; padding: 10px; background: blue; color: white; border: none; cursor: pointer; }
+        button:hover { background: darkblue; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Enter Email">
+    <button onclick="forgotPassword()">Forgot Password?</button>
+</div>
+
+<script>
+    function forgotPassword() {
+    let email = document.getElementById("email").value;
+    if (email === "") {
+        alert("Please enter your email.");
+        return;
+    }
+
+    let formData = new FormData();
+    formData.append("email", email);
+
+    fetch("http://localhost/thaaimadi/send_otp.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => {
+        // Check if response is actually JSON
+        if (!response.ok) {
+            throw new Error("Network response was not OK");
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.status === "success") {
+            alert("OTP sent successfully!");
+            window.location.href = "verify_otp.html"; // Redirect
+        } else {
+            alert(data.message); // Show correct error message
+        }
+    })
+    .catch(error => {
+        alert("Failed to send OTP. Please try again.");
+    });
+}
+
+    
+</script>
+
+</body>
+</html>
