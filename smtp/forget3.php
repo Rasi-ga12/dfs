@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forgot</title>
+    <title>Forgot Password</title>
     <link rel="stylesheet" href="user.css">
 </head>
 <body>
@@ -16,6 +15,7 @@
     <button onclick="resetPassword()">Reset Password</button>
 </div>
 
+<!-- Place the script just before the closing body tag -->
 <script>
     function resetPassword() {
         let password = document.getElementById("password").value;
@@ -37,9 +37,14 @@
             method: "POST",
             body: formData
         })
-        .then(response => response.text())
+        .then(response => response.json()) // Expecting JSON
         .then(data => {
-            alert(data);
+            alert(data.message);
+            if (data.status === "success") {
+                setTimeout(() => {
+                    window.location.href = "http://localhost/thaaimadi/login.php";
+                }, 2000);
+            }
         })
         .catch(error => console.error("Error:", error));
     }
