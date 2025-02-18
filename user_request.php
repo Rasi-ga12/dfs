@@ -10,18 +10,20 @@ if (!isset($_SESSION['pgasoid'])) {
 
 // Get the user ID from the session
 $id = intval($_SESSION['pgasoid']);
-
+$email=$_SESSION['email'];
 // Check if $conn is connected
 if (!$conn) {
     die("Database connection failed: " . mysqli_connect_error());
 }
-
-// Fetch user requests
-$sql = "SELECT * FROM db1 WHERE db1_id = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $id);
+// Assuming $conn is your database connection
+$stmt = $conn->prepare("SELECT db1.* FROM db1 
+                        JOIN db2 ON db1.db1_id = db2.id 
+                        WHERE db2.email = ?");
+$stmt->bind_param("s", $email); // "s" means string
 $stmt->execute();
 $data = $stmt->get_result();
+
+
 ?>
 
 <!DOCTYPE html>

@@ -250,8 +250,9 @@ $conn->close();
 </head>
     <body>
     <center>
-        
-       
+    <header>
+        <a href="dashboard.php">Dashboard</a>
+    </header>
     <form id="myform" action="user1.php?db2_id=<?php echo $db2_id; ?>" method="POST" enctype="multipart/form-data">
    <h1 class="space1">Death Person Details</h1>
     <table class="all1" cellpadding="27" cellspacing="27" align="center" >

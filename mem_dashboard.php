@@ -170,7 +170,7 @@ a[href*="download.php"] {
                                 }
                                 echo "<td>" . $row['status'] . "</td> ";
                                 #echo "<td><a href='view_details.php?id=" .$row['id']." '>view details</a></td>";
-                                echo "<td><a href='edit.php?id=" .$row['id']." '>Edit</a><td>";
+                                
                             echo "</tr>";
                             }
                     echo "</table>";

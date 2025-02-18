@@ -4,7 +4,7 @@ include('includes/connection.php'); // Include database connection
 
 // Check if the user is logged in
 if (!isset($_SESSION['pgasoid'])) {
-    header("location: login1.php"); // Redirect to login if not logged in
+    header("location: login.php"); // Redirect to login if not logged in
     exit();
 }
 
