@@ -15,17 +15,23 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+    .content p {
+        font-size: 22px;
+        color: black;
+        margin-top: 30px;
+    }
+    .contactform h2 {
+    text-align: center;
+  }
+    </style>
 
 </head>
 <body>
@@ -42,21 +48,22 @@ if(isset($_POST['submit'])){
                     <div class="icon"><ion-icon name="navigate-circle-outline"></ion-icon></div>
                     <div class="text">
                         <h3>Address:</h3>
-                        <p>k.Perunkarai,<br>Melappidavoor(po),<br>Sivagangai<br>630606</p>
+                        <p>Karthigairaja,<br>k.Perunkarai,<br>Melappidavoor(po),<br>Sivagangai<br>630606</p>
                     </div>
                 </div> 
                 <div class="box">
                     <div class="icon"><ion-icon name="call"></ion-icon></div>
                     <div class="text">
                         <h3>Phone:</h3>
-                        <p>9686765606</p>
+                        <p>9514114121</p>
+                        <p>9787283436</p>
                     </div>
                 </div> 
                 <div class="box">
                     <div class="icon"><ion-icon name="mail-open"></ion-icon></div>
                     <div class="text">
                         <h3>Email:</h3>
-                        <p>Adengappa006@gmail.com</p>
+                        <p>tthaaimadi@gmail.com</p>
                     </div>
                 </div> 
             </div>

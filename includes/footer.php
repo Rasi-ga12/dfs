@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="includes/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>footer</title>
+    
 
 </head>
 <body>
@@ -21,12 +22,15 @@
                 <a href=""><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="footerBottom">
-                <p>Copyright &copy;2024;</p>
+                <p>&copy; <span id="year"></span>  All rights reserved.</p>
             </div>
         
         </div>
 
     </footer>
-    
+    <script>
+    // Automatically set the current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

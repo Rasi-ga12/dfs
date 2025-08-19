@@ -88,10 +88,9 @@ ob_end_flush(); // Flush buffer and send headers
                 </div>
                 <div class="home">
                     <a href="index.php" class="homepage">Home page</a>
-</div>
+                </div>
             </form>
-            
-
+    
         </div>
 </div>
 

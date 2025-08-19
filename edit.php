@@ -151,6 +151,7 @@ button:hover {
         <input type="text" name="aadhar_number" value="<?php echo $row['aadhar_number']; ?>">
         
         <button type="submit">Update</button>
+        <br><br>
         <a href="dashboard.php">Cancel</a>
     </form>
 </div>

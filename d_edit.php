@@ -67,21 +67,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 
-.edit-container{
-            background: transparent;
-            border:2px solid rgba(255, 255, 255, .5);
-            border-radius: 20px;
-            backdrop-filter: blur(20px);
-            box-shadow:0 0 30px rgba(0, 0, 0, .5);
-            background:transparent;
-            display: flex;
-            flex-direction: column;
-            height: 850px;
-            width:600px;
-            border:1px solid green;
-            margin:auto;
-            border-radius: 25px;
-            align-items:center;
+.edit-container {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px 30px;
+    box-sizing: border-box;
 }
         
     /*position:relative;

@@ -19,7 +19,7 @@ if (isset($_POST['login'])) {
         $_SESSION['email'] = $email;
 
         // Check if email is already registered in db2
-        $check_sql = "SELECT * FROM db2 WHERE email = ?";
+        $check_sql = "SELECT * FROM member WHERE email = ?";
         $check_stmt = $conn->prepare($check_sql);
         $check_stmt->bind_param("s", $email);
         $check_stmt->execute();
@@ -72,7 +72,7 @@ if (isset($_POST['login'])) {
                 </div>
                 <button type="submit" name="login" class="btn">Login</button>
                 <div class="signup">
-                    <p>Don't have an account? <a href="signup.php" class="Signup-link">Sign up</a></p>
+                    <p>Don't have an account? <a href="signup1.php" class="Signup-link">Sign up</a></p>
                 </div>
                 <div class="home">
                     <a href="index.php" class="homepage">Home page</a>

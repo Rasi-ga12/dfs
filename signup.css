@@ -1,3 +1,127 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://cdn.wallpapersafari.com/26/4/MWqQB8.jpg') no-repeat center center / cover;
+  min-height: 100vh;
+}
+.signup.form{
+  position: relative;
+  width: 350px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+/* Signup form container 
+.signup.form {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  width: 350px;
+  max-width: 90vw;
+  text-align: center;
+}*/
+
+/* Heading */
+.signup h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+/* Error / success message */
+.signup p[style] {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Labels */
+.signup p:not([style]) {
+  text-align: left;
+  font-size: 0.9rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+/* Input fields */
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="password"] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Button */
+.signup button {
+  width: 50%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  margin-top: 10px;
+}
+
+.signup button:hover {
+  background: black;
+  color: white;
+}
+
+/* Link to login */
+.home1 {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.home1 a {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+/* Responsive tweaks for mobile */
+@media (max-width: 480px) {
+  .signup.form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .signup h1 {
+    font-size: 1.5rem;
+  }
+
+  .signup button {
+    width: 100%;
+  }
+}
+
+
+/*
 *{
     padding:0;
     margin:0;
@@ -98,7 +222,7 @@ li{
 .home1{
     margin-top: 20px;
 }
-/*
+
 .popup{
     width: 400px;
     border-radius: 6px;

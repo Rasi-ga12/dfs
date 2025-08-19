@@ -16,44 +16,47 @@ $data = mysqli_query($conn, $sql);
     <link rel="stylesheet" href="addash.css">
     <link rel="stylesheet" href="styles.css">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background: url('https://cdn.wallpapersafari.com/26/4/MWqQB8.jpg');
+            background: url('https://cdn.wallpapersafari.com/26/4/MWqQB8.jpg') no-repeat center center/cover;
             margin: 0;
             padding: 20px;
         }
-       /*.tables_details{
-            background:url('https://cdn.wallpapersafari.com/26/4/MWqQB8.jpg') no-repeat;
-            display: flex;
-            flex-direction: column;
-            height: 500px;
-            width:600px;
-            border:1px solid green;
-            align-items: center;
-            margin:auto;
-            margin-top: 50px;
-            border-radius: 25px;
-        
 
-}*/
-       /* .tables_details {
-            max-width: 800px;
-            margin: auto;
-            background: white;
+        .tables_details {
+            display: flex;
+            justify-content: center;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }*/
+        }
+
+        .last-request {
+            width: 100%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            padding: 20px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(20px);
+            overflow-wrap: break-word;
+        }
+
         .heading {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+            flex-wrap: wrap;
         }
-        .heading h2{
-            color:white;
-        } 
-        
+
+        .heading h2 {
+            color: white;
+            margin: 0;
+        }
+
         .btn {
             padding: 10px 15px;
             background: #007bff;
@@ -63,57 +66,65 @@ $data = mysqli_query($conn, $sql);
             border: none;
             cursor: pointer;
         }
+
         .btn:hover {
-            background:rgb(195, 183, 73);
+            background: rgb(195, 183, 73);
         }
-        .btn-accept {
-            background: green;
-        }
-        .btn-reject {
-            background: red;
-        }
+
         .detail-item {
-            background:rgb(112, 205, 197);
+            background: rgb(112, 205, 197);
             margin: 10px 0;
             padding: 10px;
             border-left: 5px solid #007bff;
             font-size: 16px;
             color: #555;
+            word-wrap: break-word;
         }
-        /*.last-request{
-  
-            position:relative;
-            width:500px;
-            height:540px;
-            background: transparent;
-            border:2px solid rgba(255, 255, 255, .5);
-            border-radius: 20px;
-            backdrop-filter: blur(20px);
-            box-shadow:0 0 30px rgba(0, 0, 0, .5);
-            display:flex;
-            justify-content:center;
-            align-items: center;    
-            }*/
+
         .detail-item strong {
             color: #333;
         }
-         .last-request{
-            background: transparent;
-            border:2px solid rgba(255, 255, 255, .5);
-            border-radius: 20px;
-            backdrop-filter: blur(20px);
-            box-shadow:0 0 30px rgba(0, 0, 0, .5);
-            background:transparent;
+
+        .edit-status-container {
             display: flex;
-            flex-direction: column;
-            height: 850px;
-            width:600px;
-            border:1px solid green;
-            margin:auto;
-            border-radius: 25px;
-        
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
+        .edit-link {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 6px;
+        }
+
+        .edit-link:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .heading h2 {
+                font-size: 18px;
+            }
+
+            .btn {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            .detail-item {
+                font-size: 14px;
+            }
+
+            .edit-link {
+                font-size: 14px;
+                padding: 6px 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -143,13 +154,14 @@ $data = mysqli_query($conn, $sql);
                     } else {
                         echo "<div class='detail-item'><strong>Aadhar Image:</strong> No File</div>";
                     }
+                    echo "<div class='edit-status-container'>";
                     echo "<div class='detail-item'><strong>Status:</strong> " . $row['status'] . "</div>";
-                    echo "<td><a href='d_edit.php ?id=" .$row['id']." '>Edit</a><td>";
+                    echo "<a class='edit-link' href='d_edit.php?id=" . $row['id'] . "'>Edit</a>";
+                    echo "</div>";
                 }
             } else {
                 echo "<p>No data found.</p>";
             }
-
             ?>
         </div>
     </div>

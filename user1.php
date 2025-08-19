@@ -253,6 +253,7 @@ $conn->close();
     <header>
         <a href="dashboard.php">Dashboard</a>
     </header>
+    <div class= "wrapper">
     <form id="myform" action="user1.php?db2_id=<?php echo $db2_id; ?>" method="POST" enctype="multipart/form-data">
    <h1 class="space1">Death Person Details</h1>
     <table class="all1" cellpadding="27" cellspacing="27" align="center" >
@@ -370,6 +371,9 @@ $conn->close();
             </td>
             <td>
             </td>
+                </tr>
+                <tr>
+                    <td></td>
             <td>
                 <input type="text" class="form3" placeholder="If Relative"  name="relations" size="">
                
@@ -384,5 +388,6 @@ $conn->close();
     </center>
     </table>
     </form>
+                </div>
 </body>
 </html>

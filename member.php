@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($stmt->execute()) {
         echo "Data inserted successfully!";
-        header("Location: index.php");
+        header("Location: mem_dashboard.php");
         exit();
     } else {
         die("Failed to insert data: " . $stmt->error);
