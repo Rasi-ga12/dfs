@@ -1,8 +1,15 @@
-<?php 
+<?php
+require_once "env_loader.php";
+
+// Load .env
+loadEnv(__DIR__ . '/.env');
+$adminUser = $_ENV['ADMIN_USERNAME'];
+$adminPass = $_ENV['ADMIN_PASSWORD'];
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['Password'];
-if($email==='admin123@gmail.com' and $password==='admin'){
+if($email=== $adminUser and $password===$adminPass){
  header('location:admin.php');
 }
 else{
