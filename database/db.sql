@@ -14,6 +14,17 @@ CREATE TABLE contact (
     isread TINYINT(1) DEFAULT 0,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+CREATE TABLE db2(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    mobile_number VARCHAR(15) ,
+    relation ENUM('Relative', 'Other Person'),
+    relative_description VARCHAR(255) DEFAULT 'other person',
+    address VARCHAR(255) ,
+    aadhar_number VARCHAR(12) ,
+    aadhar_file LONGBLOB ,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 CREATE TABLE db1 (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255),
@@ -32,21 +43,7 @@ CREATE TABLE db1 (
     FOREIGN KEY (db1_id) REFERENCES db2(id)
 );
 
-ALTER TABLE db1 ADD COLUMN db1_id INT;
-ALTER TABLE db1 ADD CONSTRAINT fk_db1_db2 FOREIGN KEY (db1_id) REFERENCES db2(id) ON DELETE CASCADE;
 
-
-CREATE TABLE db2(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255),
-    mobile_number VARCHAR(15) ,
-    relation ENUM('Relative', 'Other Person'),
-    relative_description VARCHAR(255) DEFAULT 'other person',
-    address VARCHAR(255) ,
-    aadhar_number VARCHAR(12) ,
-    aadhar_file LONGBLOB ,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
 ALTER TABLE db2 ADD COLUMN email VARCHAR(255) UNIQUE;
 ALTER TABLE db1
 ADD COLUMN relation ENUM('Relative', 'Other Person') AFTER status,
