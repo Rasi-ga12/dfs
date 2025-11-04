@@ -32,7 +32,6 @@ else{
         <input type="email" name="email" class="box2" placeholder="Enter Username">
         <input type="password" name="Password" class="box2"  placeholder="Enter Password">
         <input type="submit" id="submit" value="Sign In">
-        <a href="smtp/forget1.php">Forgot Password..?</a>
     </form>   
 </body>
 </html>

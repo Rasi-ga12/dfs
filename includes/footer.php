@@ -22,7 +22,7 @@
                 <a href=""><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="footerBottom">
-                <p>&copy; <span id="year"></span>  All rights reserved.</p>
+                <p>&copy; <span id="year"></span> All rights are reserved.</p>
             </div>
         
         </div>

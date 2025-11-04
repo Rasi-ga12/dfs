@@ -34,7 +34,21 @@ header {
   height: auto;
   padding-right: 1px;
 }
+.content-box {
+    border: 2px solid #33045b;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: rgba(42, 92, 61, 0.47);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 1000px;
+    flex: 1 1 300px;
+    font-size: 18px;
+    color: rgba(7, 5, 5, 0.87);
+    text-indent: 40px;
+    text-align: justify;
 
+}
 .logo,
 .Thaaimady {
   font-size: 2em;
@@ -397,15 +411,13 @@ button,
 
 /* Bullet styling */
 .bullet-text p {
-  position: relative;
-  padding-left: 20px;
-  color: black;
-  font-size: 20px;
-  text-align: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .bullet-text p::before {
-  content: "•";
   position: relative;
   left: 0;
   top: 0;

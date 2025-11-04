@@ -9,12 +9,12 @@
 <body>
 
 <div class="container">
-    <h2>Reset Password</h2><br>
-    <input type="password" id="password" placeholder="New Password"><br><br>
-    <input type="password" id="confirm_password" placeholder="Confirm Password"><br><br>
-    <button onclick="resetPassword()">Reset Password</button>
+    <h2>Reset Password</h2>
 </div>
-
+<br>
+    <input type="password" id="password" placeholder="New Password"><br>
+    <input type="password" id="confirm_password" placeholder="Confirm Password"><br>
+    <button onclick="resetPassword()">Reset Password</button>
 <!-- Place the script just before the closing body tag -->
 <script>
     function resetPassword() {

@@ -55,12 +55,19 @@
 
     <!-- Welcome Section -->
     <div class="welcome">
-        <div class="bullet-text">
-            <h1>Welcome to Thaaimady !!</h1><br><br>
-            <p>Thaaimady is a compassionate initiative committed to honoring the departed with dignity and supporting families through the traditional final rites known as Iruthi Sadangu.</p>
-            <p>Our mission begins with a heartfelt focus on serving orphaned individuals, ensuring they receive the respect and cultural rituals they deserve, even in the absence of immediate family. After prioritizing these vulnerable souls, we extend our support to all grieving families, easing the emotional and logistical burdens during one of life’s most difficult moments.</p>
-            <p>By standing by families in their most vulnerable times, Thaaimady strives to uphold cherished traditions, promote unity, and provide a peaceful farewell to the departed—marked by compassion, dignity, and respect.</p>
-        </div>
+            <h1>Welcome to Thaaimady !!</h1><br>
+            <div class="pos_cen">
+            <div class="content-wrapper">
+            <div class="content-text">
+                    <p>Thaaimady is a compassionate initiative committed to honoring the departed with dignity and supporting families through the traditional final rites known as Iruthi Sadangu.</p></br>
+                    <p>Our mission begins with a heartfelt focus on serving orphaned individuals, ensuring they receive the respect and cultural rituals they deserve, even in the absence of immediate family. After prioritizing these vulnerable souls, we extend our support to all grieving families, easing the emotional and logistical burdens during one of life’s most difficult moments.</p><br>
+                    <p>By standing by families in their most vulnerable times, Thaaimady strives to uphold cherished traditions, promote unity, and provide a peaceful farewell to the departed—marked by compassion, dignity, and respect.</p>
+            </div></div></div>
+            <!--<div class="content-box">
+            <p>Thaaimady is a compassionate initiative committed to honoring the departed with dignity and supporting families through the traditional final rites known as Iruthi Sadangu.</p></div>
+            <div class="content-box"><p>Our mission begins with a heartfelt focus on serving orphaned individuals, ensuring they receive the respect and cultural rituals they deserve, even in the absence of immediate family. After prioritizing these vulnerable souls, we extend our support to all grieving families, easing the emotional and logistical burdens during one of life’s most difficult moments.</p></div>
+            <div class="content-box"><p>By standing by families in their most vulnerable times, Thaaimady strives to uphold cherished traditions, promote unity, and provide a peaceful farewell to the departed—marked by compassion, dignity, and respect.</p></div>
+        </div>-->
 
         <div class="pos_cen">
             <div class="content-wrapper">
@@ -74,7 +81,6 @@
         </div>
 
         <div class="let">
-            <img class="imghelp_deg" src="https://www.foundationuk.org/wp-content/uploads/2015/09/help.jpg" alt="Help">
             <div class="content">
                 <h2>Let's help the needy hands!</h2>
                 <h4 class="need">We are there, if you need us..</h4>

@@ -3,9 +3,9 @@ session_start();
 require 'config.php';
 
 // Manually include PHPMailer files
-require 'C:\xampp\htdocs\smtp\PHPMailer-master\src\Exception.php';
-require 'C:\xampp\htdocs\smtp\PHPMailer-master\src\PHPMailer.php';
-require 'C:\xampp\htdocs\smtp\PHPMailer-master\src\SMTP.php';
+require __DIR__ . '/PHPMailer-master/src/Exception.php';
+require __DIR__ . '/PHPMailer-master/src/PHPMailer.php';
+require __DIR__ . '/PHPMailer-master/src/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
