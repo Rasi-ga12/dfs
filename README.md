@@ -67,7 +67,9 @@ Currently, Thaaimadi services are available **only in Sivagangai**, Tamil Nadu. 
 6. Open any browser and navigate to the project folder.
    For example:http://localhost/folder-name
 
-
+---
+**For Demo**
+https://thaaimadi.org.in/
    
 
 
