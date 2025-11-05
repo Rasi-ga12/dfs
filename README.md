@@ -59,11 +59,13 @@ Currently, Thaaimadi services are available **only in Sivagangai**, Tamil Nadu. 
 2. Clone or copy the project into the htdocs/ directory:
 3. ```bash
    git clone https://github.com/Rasi-ga12/dfs.git
+   
 4. In XAMPP, click the Admin button under MySQL to open phpMyAdmin locally.
    Create a database named dfs.
    Use the Import option to upload the .sql file. This will automatically create the necessary tables.
-5. Open any browser and navigate to the project folder. For example:
-   http://localhost/<folder-name>
+   
+6. Open any browser and navigate to the project folder.
+   For example:http://localhost/folder-name
 
 
    
